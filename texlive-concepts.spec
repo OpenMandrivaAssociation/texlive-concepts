@@ -6,7 +6,7 @@
 # catalog-version 0.0.5-r1
 Name:		texlive-concepts
 Version:	0.0.5.r1
-Release:	7
+Release:	8
 Summary:	Keeping track of formal 'concepts' for a particular field
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/concepts
