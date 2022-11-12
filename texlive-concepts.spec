@@ -1,18 +1,12 @@
-# revision 29020
-# category Package
-# catalog-ctan /macros/latex/contrib/concepts
-# catalog-date 2012-12-31 10:20:52 +0100
-# catalog-license lppl
-# catalog-version 0.0.5-r1
 Name:		texlive-concepts
-Version:	0.0.5r1
-Release:	2
+Version:	29020
+Release:	1
 Summary:	Keeping track of formal 'concepts' for a particular field
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/concepts
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concepts.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concepts.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concepts.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concepts.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ common packages, the user should check the package's README
 file for the complete list.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -50,7 +44,7 @@ file for the complete list.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
