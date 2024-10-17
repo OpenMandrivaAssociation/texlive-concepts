@@ -3,7 +3,7 @@ Version:	29020
 Release:	2
 Summary:	Keeping track of formal 'concepts' for a particular field
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/concepts
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/concepts
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concepts.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concepts.doc.r%{version}.tar.xz
